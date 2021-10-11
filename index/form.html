@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form-project-1</title>
+    <link href="../styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <img src="/images/logo.jpeg" alt="logo" class="logo" />
+      </div>
+
+     
+      <div class="container-link">
+          <a class="link-class" href="./home.html">Home</a>
+          <a class="link-class" href="./meet.html">Conócenos</a>
+          <a class="link-class" href="./contac.html">Contacto</a>
+      </div>
+        <!-- <button class="burguer" name="menu"> ☰ </button> -->
+
+      <div class="dropdown burguer">
+          <span>☰</span>
+          <div class="dropdown-content">
+            <a class="link-class" href="./home.html">Home</a>
+            <a class="link-class" href="./meet.html">Conócenos</a>
+            <a class="link-class" href="./contac.html">Contacto</a>
+      </div>
+      
+    </nav>
+
+    <p class="title">Formulario</p>
+
+    <form>
+
+      <div class="pad-ing-botton">
+        <div class="flexBox">
+          <label>Nombre:</label>
+          <input type="text" />
+        </div>
+
+        <div class="flexBox">
+          <label>Apellidos:</label>
+          <input type="text" />
+        </div>
+
+        <div class="flexBox">
+          <label>Teléfono:</label>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="pad-ing-botton">
+        <strong>Modalidad</strong>
+
+        <div>
+          <input
+            type="radio"
+            id="Presencial"
+            name="Modalidad"
+            value="Presencial"
+          />
+          <label for="Presencial" class="pad-ing-left">Presencial</label>
+        </div>
+
+        <span>
+          <input type="radio" id="online" name="Modalidad" value="Online" />  
+          <label for="Online">Online</label>
+        </span>
+      </div>
+
+      <div class="pad-ing-botton">
+        <strong>Conocimientos previos</strong>
+          <div>
+  
+            <input type="checkbox" name="HTML" value="HTML" />
+            <label for="HTML"> HTML</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" name="CSS" value="CSS" />
+            <label for="CSS"> CSS</label>
+          </div>
+  
+          <div>
+            <input type="checkbox" name="JS" value="JS" />
+            <label for="JS"> JS</label>
+          </div>
+  
+        </div>
+
+
+
+
+      
+        <input type="submit" value="Submit" />
+      </span>
+    </form>
+  </body>
+</html>

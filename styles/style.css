@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 12px;
+  /* rem multiplica por el valor por defecto (10) */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  background-repeat: no-repeat;
+  width: 120px;
+}
+
+.container-link {
+  display: flex;
+  align-items: center;
+}
+
+.burguer{
+  border:none;
+  background:none;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-width: 829px) {
+  
+  .container-link{
+    display: none;
+    background-color: tomato;
+  }
+
+  .burguer{
+    border:none;
+    background: none;
+    font-size: 2rem;
+  }
+
+  /* menu burguer */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  .dropdown-content {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: rgb(174, 132, 214);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+  
+
+}
+
+@media (min-width: 829px) {
+
+  .burguer{
+    display: none;
+  }
+
+}
+
+.link-class {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.container-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/fondo.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  
+  height: 800px;
+}
+
+@media (max-width: 829px){
+  .container-image{
+    font-size: 100px;
+  }
+} 
+
+@media (min-width: 829px){
+  .container-image{
+    font-size: 200px;
+  }
+} 
+
+.title {
+  color: blueviolet;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.align {
+  text-align: center;
+  padding: 10px 10px 100px 10px;
+}
+
+/* ---- */
+
+/* Formato home */
+
+table {
+  padding: 10px;
+  font-size: 14px;
+
+  padding-bottom: 50px;
+  border-collapse: collapse;
+}
+
+th {
+  color: blueviolet;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+td {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.border {
+  border-bottom: 1px solid black;
+}
+
+.num {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding-left: 0px;
+}
+.letter-bold {
+  font-weight: bolder;
+  padding-right: 30px;
+}
+
+.container-text {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+}
+/* Formato meet */
+
+
+
+@media (max-width: 1290px) { /*pantalla pequeña*/
+  .container-photos {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+  }
+
+  .container-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 829px) { /*pantalla grande*/
+  .container-photos {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+
+.photo {
+  height: 300px;
+  border-radius: 50%;
+  padding: 10px 100px 10px 100px;
+}
+
+.align-pad {
+  text-align: center;
+  padding: 20px 100px 80px 100px;
+}
+
+/* formulario */
+
+form {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-left: 40%;
+  padding-top: 20px;
+
+  /* justify-content:flex-end; */
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.pad-ing-left {
+  padding-left: 14px;
+}
+
+.pad-ing-botton {
+  padding-bottom: 20px;
+}
+
+/* para colocar las fotos en vertical cuando la pantalla es pequeña
+@media (min-width: 829px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} */
